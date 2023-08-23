@@ -49,9 +49,11 @@ int main(int ac __attribute__((unused)), char **av)
 				perror(av[0]);
 			else
 			{
-			status = exe(tokens, av); }
+			status = exe(tokens, av);
+			}
+		}
 		free(line);
-		free_array(tokens); }
+		free_array(tokens);
 	}
 	return (status);
 }
